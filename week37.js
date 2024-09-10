@@ -26,11 +26,10 @@ for (let index = 0; index < people.length; index++) {
     100 times. 
     Remember we use console.log() to print things out.
 */
-
-
-
 console.log("Task: A");
-
+for (let i = 0; i < 100; i++) {
+    console.log(i+1 + ": Debugging is like being a detective in a crime drama where you are also the murderer");
+}
 
 
 /*
@@ -41,13 +40,13 @@ console.log("Task: A");
 */
 console.log("Task: B");
 
-const max = 99;
-for (let index = 0; index < max; index--); {
+const max = 0;
+for (let index = 99; index > max; index--) {
     console.log(index + " bottles of soda on the shelf");
     console.log(index + " bottles of soda on the shelf");
 
     console.log(
-        "Take one down, pass it around." + (index - 1) + " bottles of soda on the shelf"
+        "Take one down, pass it around.\n" + (index - 1) + " bottles of soda on the shelf"
     );
     console.log("");
 }
@@ -61,6 +60,13 @@ console.log("No more bottles of soda on the shelf");
 */
 console.log("Task: C");
 
+const earthsGravity = 9.807;
+const PI = 3.14;
+let numberOfPeopleInRoom = 1;
+
+console.log(earthsGravity);
+console.log(PI);
+console.log(numberOfPeopleInRoom);
 
 
 /*
@@ -70,8 +76,9 @@ console.log("Task: C");
 console.log("Task: D");
 
 // write your function here.
-
-
+function add(a, b) {
+    return a + b
+}
 
 console.log("3 + 6 = " + add(3, 6));
 console.log("5673 + 234 = " + add(5673, 234));
@@ -82,7 +89,10 @@ console.log("5673 + 234 = " + add(5673, 234));
     NB: You should not change people, just use its contents.
 */
 console.log("Task: E");
-
+for (let index = people.length - 1; index >= 0; index--) {
+    let person = people[index];
+    console.log(person);
+}
 
 
 /*
@@ -90,13 +100,19 @@ console.log("Task: E");
     Declare a variable for a list of phone numbers. Your list should have at least 3 numbers. 
 */
 console.log("Task: F");
-
+let phoneNumbers = ["123456789", "123456781", "987654321", "098765432"];
+console.log(phoneNumbers);
 
 /*
     Task: G
     Print only the last phone number in your list from Task F
 */
 console.log("Task: G");
+
+let lastPhoneNumber = phoneNumbers[phoneNumbers.length - 1];
+console.log(lastPhoneNumber)
+
+
 
 /*
     Task: H
@@ -105,3 +121,7 @@ console.log("Task: G");
 console.log("Task: H");
 
 let peopleNames = [["Christian", "Simonsen"], ["Tony", "Bergholtz"]]
+
+for (let i = 0; i < peopleNames.length; i++) {
+    console.log(peopleNames[i][1]);
+}
